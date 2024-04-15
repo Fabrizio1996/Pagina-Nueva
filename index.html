@@ -1,0 +1,175 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+  <title>desplegable1.html</title>
+  <style type="text/css">
+    * {
+      padding: 0;
+      margin: auto;
+      text-align: center;
+    }
+
+    #cabecera {
+      background-color: #e78c1485;
+      text-align: left;
+      position: relative;
+    }
+
+    #logo {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 110px; 
+      height: auto;
+    }
+
+    #principal {
+      text-align: center;
+      background-color: #70e9ad;
+    }
+
+    h1 {
+      font: bold 1.5em arial;
+      padding: 0.5em;
+    }
+
+    #navegador {
+      background-color: #e7e7e7;
+      padding: 0.5em;
+    }
+
+    #navegador li {
+      margin: 0px 5px;
+      padding: 0.1em 1em 0.5em 1em;
+      background-color: #e78c1485;
+      width: 12%;
+      float: left;
+      list-style-type: none;
+      position: relative;
+    }
+
+    #subseccion1,
+    #subseccion2,
+    #subseccion3,
+    #subseccion4 {
+      position: absolute;
+      top: 100%;
+      left: 0px;
+      background-color: #41338b;
+      font: normal 0.8em arial;
+      padding: 0.2em 0.5em;
+      display: none;
+    }
+
+    #navegador li:hover {
+      background-color: #990033;
+    }
+
+    #navegador li a:link,
+    #navegador li a:visited {
+      color: #feffe4;
+      text-decoration: none;
+    }
+
+    #navegador li a:hover,
+    #navegador li a:active {
+      color: #ffd7a9;
+      text-decoration: none;
+    }
+
+    .borrar {
+      clear: both;
+    }
+
+    #principal h2 {
+      font: bold 1.5em arial;
+      padding: 0.5em
+    }
+
+    #principal p {
+      font: normal 0.9em arial;
+      text-align: justify;
+      text-indent: 3em;
+      padding: 0.5em 2em;
+    }
+
+
+  </style>
+  <script type="text/javascript">
+    function ver(n) {
+      document.getElementById("subseccion" + n).style.display = "block"
+    }
+    function ocultar(n) {
+      document.getElementById("subseccion" + n).style.display = "none"
+    }
+  </script>
+</head>
+
+<style>
+  #btnBuscar img {
+    width: 20px;
+    height: 20px;
+  }
+</style>
+
+<body>
+  <div id="cabecera">
+    <h1>Cuidado de Animales</h1>
+    <div id="buscador">
+      <input type="text" id="busqueda" placeholder="Buscar...">
+      <button id="btnBuscar"><img src="img/buscar.png" alt="Buscar"></button>
+    </div>
+    <img id="logo" src="img/animales.jpg" alt="Logo">
+  </div>
+  <div id="navegador">
+    <ul>
+      <li id="seccion1" onmouseover="ver(1)" onmouseout="ocultar(1)">
+        <a href="#">Adiestramiento</a>
+        <div id="subseccion1">
+          <p><a href="#"> Adiestramiento en obediencia</a></p>
+          <p><a href="#"> Adiestramiento en agility</a></p>
+          <p><a href="#"> Adiestramiento en protección</a></p>
+        </div>
+      </li>
+      <li id="seccion2" onmouseover="ver(2)" onmouseout="ocultar(2)">
+        <a href="#">Curiosidades</a>
+        <div id="subseccion2">
+          <p><a href="#"> Detectan las enfermedades</a></p>
+          <p><a href="#"> Olfato a la distancia</a></p>
+        </div>
+      </li>
+      <li id="seccion3" onmouseover="ver(3)" onmouseout="ocultar(3)">
+        <a href="#">Belleza</a>
+        <div id="subseccion3">
+          <p><a href="#"> Baño y secado</a></p>
+          <p><a href="#"> Corte de Pelaje</a></p>
+          <p><a href="#"> Corte de uñas</a></p>
+        </div>
+      </li>
+      <li id="seccion4" onmouseover="ver(4)" onmouseout="ocultar(4)">
+        <a href="#">Alimentacion</a>
+        <div id="subseccion4">
+          <p><a href="#"> Galletas</a></p>
+          <p><a href="#"> Comida en casa</a></p>
+        </div>
+      </li>
+    </ul>
+    <div class="borrar"></div>
+  </div>
+  <div id="principal">
+    <h2>Cuerpo principal de la página</h2>
+  </div>
+
+  <p>"Nos preocupamos por el bienestar y la salud de todos los animales. 
+    El cuidado adecuado de nuestras mascotas y animales de compañía es esencial para garantizar su felicidad y calidad de vida. 
+    Desde proporcionarles una dieta equilibrada y ejercicio regular hasta brindarles amor y atención, cada aspecto del cuidado animal es importante. 
+    Explora nuestros consejos y recursos sobre cuidado animal para aprender cómo mantener a tus amigos peludos felices y saludables.".</p>
+
+    <img src="img/baño.jpg" alt="baño">
+    <img src="img/alimento.jpg" alt="alimento">
+    <img src="img/adiestramiento.jpg" alt="adiestramiento">
+</body>
+
+</html>
